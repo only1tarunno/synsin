@@ -33,7 +33,7 @@ const Hero = () => {
       </Container>
 
       {/* hero star  */}
-      <div className="hidden lg:block absolute lg:w-[100px] 2xl:w-[150px] lg:-bottom-[5%]  2xl:-bottom-[10%] left-[10%]">
+      <div className="hidden lg:block absolute lg:w-[100px] 2xl:w-[150px] lg:-bottom-[7%]  2xl:-bottom-[10%] left-[10%]">
         <img src={heroStar} className="w-full" alt="" />
       </div>
     </section>
