@@ -3,21 +3,53 @@ import mail from "../../assets/images/email.png";
 import check from "../../assets/images/check.png";
 import downArrow from "../../assets/images/down-arrow.png";
 import pen from "../../assets/images/pen.png";
+import { useRef } from "react";
+import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  const onSubmit = (e) => {
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
-    e.target.reset();
+
+    emailjs
+      .sendForm(
+        // "service_v66170g", //Service ID
+        // "template_256f75t", //Template ID
+        form.current
+        // "nVPddS5hOGMkl5Kl4" //Public Key
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            Swal.fire({
+              title: "Mail has been send",
+              icon: "success",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+            e.target.reset();
+          }
+        },
+        (error) => {
+          console.log(error.text);
+          Swal.fire({
+            title: "Mail send error",
+            icon: "error",
+          });
+        }
+      );
   };
   return (
     <>
-      <form onSubmit={onSubmit}>
+      <form ref={form} onSubmit={sendEmail}>
         <div className="flex items-center justify-between flex-col md:flex-row gap-y-4">
           {/* name  */}
           <div className="relative w-full md:w-[32%] h-[60px]">
             <input
               type="text"
               placeholder="Name"
+              name="user_name"
               required
               className="w-full h-full  rounded-lg pl-16 text-[#003A74] focus:outline-none"
               id="name"
@@ -33,6 +65,7 @@ const ContactForm = () => {
           <div className="relative w-full md:w-[32%] h-[60px]">
             <input
               type="email"
+              name="user_email"
               placeholder="E-mail"
               required
               className="w-full h-full  rounded-lg pl-16 text-[#003A74] focus:outline-none"
@@ -51,14 +84,15 @@ const ContactForm = () => {
               className="w-full h-full rounded-lg pl-16  text-[#003A74] focus:outline-none"
               defaultValue="Make a choice"
               id="make-a-choice"
+              name="choice"
             >
               <option defaultValue="" disabled>
                 Make a choice
               </option>
 
-              <option defaultValue="option1">Option 1</option>
-              <option defaultValue="option2">Option 2</option>
-              <option defaultValue="option3">Option 3</option>
+              <option defaultValue="option1">General Inquiries</option>
+              <option defaultValue="option2">Project offer</option>
+              <option defaultValue="option3">Career opportunities</option>
             </select>
             <label
               htmlFor="make-a-choice"
@@ -80,6 +114,7 @@ const ContactForm = () => {
             placeholder="Text..."
             className="w-full h-full rounded-lg pl-16 pt-4 text-[#003A74] focus:outline-none resize-none"
             id="message"
+            name="message"
           ></textarea>
           <label htmlFor="message" className="w-4 absolute left-7 top-[22px]">
             <img src={pen} className="w-full" alt="" />

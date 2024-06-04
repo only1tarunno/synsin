@@ -6,39 +6,61 @@ import solutionImg from "../../assets/images/solution-audit.png";
 import BookNow from "./BookNow";
 
 const AboutUsCards = () => {
+  const consulting = [
+    "Project Planning and Strategy",
+    "Design and Architecture Review",
+    "Implementation Oversight",
+    "Quality Assurance and Testing",
+    "Risk Management",
+    " Documentation and Reporting",
+    " Post-Implementation Review",
+    " Technical Interviews",
+  ];
+
+  const solution = [
+    "Project Planning and Strategy",
+    "Design and Architecture Review",
+    "Implementation Oversight",
+    "Quality Assurance and Testing",
+    "Risk Management",
+    "Documentation and Reporting",
+    "Post-Implementation Review",
+    "Technical Interviews",
+  ];
+
+  const technical = [
+    "Enhanced Stability and Robustness",
+    "Cost Efficiency",
+    "Improved Security",
+    "Adherence to Best Practices",
+    "Scalability",
+    "Objective Assessment",
+    "Actionable Insights",
+    "Risk Mitigation",
+    "Peace of Mind",
+  ];
+
   return (
     <section className="py-10 lg:py-0 lg:pb-20 xl:pb-[153px] relative">
       <Container>
         <div className="space-y-5 md:space-y-10">
           <AboutUsSingleCard
             title="IT Consulting"
-            content=" Our mission is to provide startups and small businesses with the
-          guidance and expertise needed to navigate the complex technology
-          landscape. We aim to equip you with a thorough understanding of the
-          various technologies available, ensuring you can make strategic
-          decisions with confidence. Our goal is to lead you through the
-          necessary and sufficient steps to reach your desired outcomes."
+            content="Choosing the right technology can be overwhelming. If you're unsure about implementing your ideas or the resources needed, consider an independent consultant. We offer expert, unbiased advice on technologies and costs, helping you save money and set your project up for success. We'll guide you in selecting the right technology and cloud solutions to meet your business goals, ensuring informed decisions and successful projects."
             contentImg={iTConsulting}
+            serviceTag={consulting}
           />
           <AboutUsSingleCard
             title="Solution Audit"
-            content=" Our mission is to provide startups and small businesses with the
-          guidance and expertise needed to navigate the complex technology
-          landscape. We aim to equip you with a thorough understanding of the
-          various technologies available, ensuring you can make strategic
-          decisions with confidence. Our goal is to lead you through the
-          necessary and sufficient steps to reach your desired outcomes."
+            content="Have a great idea but need help finding the right team to implement it? We provide competent oversight to ensure your project's success. Our expert services include detailed project plans, system architecture reviews, regular code reviews, quality assurance, and risk mitigation. Delegate to us for cost-effective, high-quality implementation that aligns with your vision."
             contentImg={solutionImg}
+            serviceTag={solution}
           />
           <AboutUsSingleCard
             title="Technical Supervision"
-            content=" Our mission is to provide startups and small businesses with the
-          guidance and expertise needed to navigate the complex technology
-          landscape. We aim to equip you with a thorough understanding of the
-          various technologies available, ensuring you can make strategic
-          decisions with confidence. Our goal is to lead you through the
-          necessary and sufficient steps to reach your desired outcomes."
+            content="Are you unsure if your existing IT solution is stable, robust, or cost-effective? Our expert oversight evaluates your IT systems to ensure they meet industry best practices and align with your business goals. We conduct comprehensive assessments, review stability and cost-effectiveness, and provide actionable insights. Our services include project management, supervision of contractors, and thorough vetting to ensure your IT solutions are secure, scalable, and reliable."
             contentImg={technicalImg}
+            serviceTag={technical}
           />
           <div className="flex justify-center">
             <BookNow />

@@ -19,7 +19,10 @@ const About = () => {
             />
           </div>
           <div className="flex-1 space-y-[24px]">
-            <h2 className="font-bold lg:text-[38px] sm:text-[32px] text-[24px]">
+            <h2
+              className="font-bold lg:text-[38px] sm:text-[32px] text-[24px]"
+              id="aboutTitle"
+            >
               About us
             </h2>
             <p>

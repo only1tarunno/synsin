@@ -26,11 +26,15 @@ body {
   font-family: "Circe", sans-serif;
 }
 
-h2 {
+#aboutTitle,
+#whyChooseTitle,
+#contactTitle {
   position: relative;
   text-transform: uppercase;
 }
-h2::before {
+#aboutTitle::before,
+#whyChooseTitle::before,
+#contactTitle::before {
   content: "";
   background: url(../src/assets/images/title-line.png);
   background-repeat: no-repeat;
