@@ -3,11 +3,11 @@ import Container from "../Shared/Container";
 import iTConsulting from "../../assets/images/it-consulting.png";
 import technicalImg from "../../assets/images/technical-supervision.png";
 import solutionImg from "../../assets/images/solution-audit.png";
-import Button from "../Shared/Button";
+import BookNow from "./BookNow";
 
 const AboutUsCards = () => {
   return (
-    <section className="py-10 lg:py-0 lg:pb-20 xl:pb-[153px]">
+    <section className="py-10 lg:py-0 lg:pb-20 xl:pb-[153px] relative">
       <Container>
         <div className="space-y-5 md:space-y-10">
           <AboutUsSingleCard
@@ -40,9 +40,7 @@ const AboutUsCards = () => {
           necessary and sufficient steps to reach your desired outcomes."
             contentImg={technicalImg}
           />
-          <div className="flex justify-center">
-            <Button btnText="Book Now" />
-          </div>
+          <BookNow />
         </div>
       </Container>
     </section>

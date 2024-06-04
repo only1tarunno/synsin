@@ -7,7 +7,7 @@ import heroStar from "../../assets/images/stars.png";
 const Hero = () => {
   return (
     <section
-      className="hero bg-no-repeat bg-cover bg-center relative"
+      className="bg-no-repeat bg-cover bg-center relative"
       style={{ backgroundImage: `url(${heroBg})` }}
       id="hero"
     >
