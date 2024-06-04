@@ -40,7 +40,9 @@ const AboutUsCards = () => {
           necessary and sufficient steps to reach your desired outcomes."
             contentImg={technicalImg}
           />
-          <BookNow />
+          <div className="flex justify-center">
+            <BookNow />
+          </div>
         </div>
       </Container>
     </section>

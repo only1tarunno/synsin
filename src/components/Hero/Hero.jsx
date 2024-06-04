@@ -1,8 +1,9 @@
-import Button from "../Shared/Button";
 import Container from "../Shared/Container";
 import heroImg from "../../assets/images/hero-img.png";
 import heroBg from "../../assets/images/hero-bg.png";
 import heroStar from "../../assets/images/stars.png";
+import { HashLink } from "react-router-hash-link";
+import { FaAngleRight } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -18,7 +19,19 @@ const Hero = () => {
             <h1 className="font-bold lg:text-[50px] sm:text-[32px] text-[26px]">
               Expert IT Advisory Services Tailored for Your Business
             </h1>
-            <Button btnText="Contact us today" />
+            {/* button  */}
+            <div className="max-w-[265px]">
+              <HashLink
+                to="#contact"
+                className="flex justify-center items-center gap-2 bg-[#003A74] text-white text-[20px] py-[14px] px-[38px] rounded-[30px] hover:bg-[#0051A4] capitalize"
+                smooth
+              >
+                Contact us today{" "}
+                <span>
+                  <FaAngleRight />
+                </span>
+              </HashLink>
+            </div>
           </div>
 
           {/* hero img  */}

@@ -3,7 +3,7 @@ import { InlineWidget } from "react-calendly";
 
 const BookNow = () => {
   return (
-    <div className="flex justify-center">
+    <>
       <button
         onClick={() => document.getElementById("my_modal_3").showModal()}
         className="flex items-center gap-2 bg-[#003A74] text-white text-[20px] py-[14px] px-[38px] rounded-[30px] hover:bg-[#0051A4] capitalize"
@@ -16,7 +16,7 @@ const BookNow = () => {
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
 
       <dialog id="my_modal_3" className="modal">
-        <div className="modal-box w-11/12 max-w-5xl">
+        <div className="modal-box w-11/12 max-w-[1140px]">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
@@ -28,7 +28,7 @@ const BookNow = () => {
           </div>
         </div>
       </dialog>
-    </div>
+    </>
   );
 };
 
