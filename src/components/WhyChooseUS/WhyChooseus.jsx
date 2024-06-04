@@ -8,7 +8,7 @@ const WhyChooseus = () => {
     <section
       className="hero bg-no-repeat bg-cover bg-center relative min-h-[600px] lg:min-h-[1655px] py-10 lg:py-0 flex flex-col justify-center"
       style={{ backgroundImage: `url(${whyChooseBg})` }}
-      id="hero"
+      id="services"
     >
       <Container>
         <div>

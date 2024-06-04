@@ -8,6 +8,7 @@ const Contact = () => {
     <section
       className="py-10 lg:py-16 bg-no-repeat bg-cover bg-bottom min-h-[600px] lg:min-h-[717px]"
       style={{ backgroundImage: `url(${contactBg})` }}
+      id="contact"
     >
       <Container>
         <ContactTitle />

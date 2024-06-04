@@ -7,6 +7,7 @@ const About = () => {
     <section
       className="bg-no-repeat bg-cover bg-bottom"
       style={{ backgroundImage: `url(${aboutBg})` }}
+      id="about-us"
     >
       <Container>
         <div className="flex flex-col lg:flex-row lg:min-h-[776px] min-h-[600px] items-center">

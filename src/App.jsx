@@ -3,12 +3,14 @@ import AboutUsCards from "./components/About/AboutUsCards";
 import Cta from "./components/CTA/CTA";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer.jsx/Footer";
+import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import WhyChooseus from "./components/WhyChooseUS/WhyChooseus";
 
 function App() {
   return (
     <>
+      <Header />
       <Hero />
       <About />
       <AboutUsCards />

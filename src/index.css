@@ -62,3 +62,18 @@ select {
 .home-shadow {
   box-shadow: 0 2px 20px 0 #0072a112;
 }
+.active {
+  position: relative;
+  color: #003a74;
+}
+.active::after {
+  content: "";
+  background: url(../src/assets/images/title-line.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: -2px;
+}
