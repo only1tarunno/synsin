@@ -1,7 +1,7 @@
-import WhyChooseus from "./components/WhyChooseus";
+import WhyChooseus from "./components/WhyChooseUS/WhyChooseus";
 import About from "./components/About";
-import AboutUsCards from "./components/AboutUsCards";
-import Hero from "./components/Hero";
+import AboutUsCards from "./components/About/AboutUsCards";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
