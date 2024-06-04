@@ -45,6 +45,19 @@ h2::before {
   left: 50%;
   transform: translateX(-50%);
 }
+#contactTitle::before {
+  background: url(../src/assets/images/title-line2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 .home-shadow {
   box-shadow: 0 2px 20px 0 #0072a112;
