@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/CRC25.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/CRC35.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/CRC55.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/CRC65.otf") format("opentype");
+  font-weight: 700;
+}
+body {
+  font-family: "Circe", sans-serif;
+}
+
+h2 {
+  position: relative;
+  text-transform: uppercase;
+}
+h2::before {
+  content: "";
+  background: url(../src/assets/images/title-line.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 90px;
+  height: 8.47px;
+  left: 0;
+  bottom: -6px;
+}
+#whyChooseTitle::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home-shadow {
+  box-shadow: 0 2px 20px 0 #0072a112;
+}
