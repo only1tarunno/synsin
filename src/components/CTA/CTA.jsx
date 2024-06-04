@@ -1,13 +1,14 @@
 import Container from "../Shared/Container";
 import ctaBg from "../../assets/images/cta-bg.jpg";
 import { FaAngleRight } from "react-icons/fa6";
+import ctaStar from "../../assets/images/cta-stars.png";
 
 const Cta = () => {
   return (
     <section className="py-10 lg:py-16">
       <Container>
         <div
-          className="bg-no-repeat bg-cover bg-bottom min-h-[437px] text-center flex justify-center items-center flex-col px-5 lg:px-0 rounded-xl"
+          className="bg-no-repeat bg-cover bg-bottom min-h-[437px] text-center flex justify-center items-center flex-col px-5 lg:px-0 rounded-xl relative"
           style={{ backgroundImage: `url(${ctaBg})` }}
         >
           <h3 className="max-w-[520px] font-bold lg:text-[38px] sm:text-[32px] text-[24px] text-white leading-tight mx-auto">
@@ -23,6 +24,9 @@ const Cta = () => {
               <FaAngleRight />
             </span>
           </button>
+          <div className="hidden lg:block absolute top-0 right-20 w-[110px]">
+            <img src={ctaStar} className="w-full" alt="" />
+          </div>
         </div>
       </Container>
     </section>
