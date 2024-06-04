@@ -16,8 +16,8 @@ const ContactForm = () => {
       .sendForm(
         // "service_v66170g", //Service ID
         // "template_256f75t", //Template ID
-        form.current
-        // "nVPddS5hOGMkl5Kl4" //Public Key
+        form.current,
+        "nVPddS5hOGMkl5Kl4" //Public Key
       )
       .then(
         (result) => {

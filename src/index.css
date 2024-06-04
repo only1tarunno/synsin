@@ -83,3 +83,7 @@ select {
   bottom: 0;
   z-index: 500;
 }
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: #003a74;
+}
