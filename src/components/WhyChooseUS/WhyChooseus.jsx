@@ -13,7 +13,7 @@ const WhyChooseus = () => {
       <Container>
         <div>
           <h2
-            className="font-bold lg:text-[38px] text-[24px] text-[#003A74] text-center mb-14"
+            className="font-bold lg:text-[38px] sm:text-[32px] text-[24px] text-[#003A74] text-center mb-14"
             id="whyChooseTitle"
           >
             Why Choose Us

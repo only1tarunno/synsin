@@ -18,7 +18,9 @@ const About = () => {
             />
           </div>
           <div className="hero-content flex-1 space-y-[24px]">
-            <h2 className="font-bold lg:text-[38px] text-[24px]">About us</h2>
+            <h2 className="font-bold lg:text-[38px] sm:text-[32px] text-[24px]">
+              About us
+            </h2>
             <p>
               Our mission is to provide startups and small businesses with the
               guidance and expertise needed to navigate the complex technology

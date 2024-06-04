@@ -10,7 +10,7 @@ const Cta = () => {
           className="bg-no-repeat bg-cover bg-bottom min-h-[437px] text-center flex justify-center items-center flex-col px-5 lg:px-0 rounded-xl"
           style={{ backgroundImage: `url(${ctaBg})` }}
         >
-          <h3 className="max-w-[520px] font-bold lg:text-[38px] text-[24px] text-white leading-tight mx-auto">
+          <h3 className="max-w-[520px] font-bold lg:text-[38px] sm:text-[32px] text-[24px] text-white leading-tight mx-auto">
             SyncSIn – Your Partner in Digital Transformation
           </h3>
           <p className="max-w-[925px] text-white text-lg lg:text-2xl mx-auto py-5 lg:pb-[54px]">

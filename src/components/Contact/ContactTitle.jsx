@@ -2,7 +2,7 @@ const ContactTitle = () => {
   return (
     <div>
       <h2
-        className="font-bold lg:text-[38px] text-[24px] text-white text-center"
+        className="font-bold lg:text-[38px] sm:text-[32px] text-[24px] text-white text-center"
         id="contactTitle"
       >
         CONTACT US

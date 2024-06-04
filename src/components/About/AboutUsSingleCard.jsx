@@ -4,7 +4,9 @@ const AboutUsSingleCard = ({ title, content, contentImg }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center gap-8 xl:gap-[50px] home-shadow p-5 md:p-10 xl:p-[54px] rounded-[7px] bg-[#FEFEFE] hover:bg-[#28566912]  text-[#003A74]">
       <div className="flex-1 lg:order-1 order-2">
-        <h3 className="font-bold  text-[20px] lg:text-[26px]">{title}</h3>
+        <h3 className="font-bold  text-[20px] sm:text-[24px] lg:text-[26px]">
+          {title}
+        </h3>
         <p className=" text-base lg:text-[18px] pt-8 pb-5 lg:pt-14 lg:pb-8 max-w-[510px]">
           {content}
         </p>
