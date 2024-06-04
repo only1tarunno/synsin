@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import messagebg from "../assets/images/message-box.png";
+import messagebg from "../../assets/images/message-box.png";
 
 const MessageBox = ({ title, content }) => {
   return (

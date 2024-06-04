@@ -1,8 +1,8 @@
 import AboutUsSingleCard from "./AboutUsSingleCard";
 import Container from "../Shared/Container";
-import iTConsulting from "../assets/images/it-consulting.png";
-import technicalImg from "../assets/images/technical-supervision.png";
-import solutionImg from "../assets/images/solution-audit.png";
+import iTConsulting from "../../assets/images/it-consulting.png";
+import technicalImg from "../../assets/images/technical-supervision.png";
+import solutionImg from "../../assets/images/solution-audit.png";
 import Button from "../Shared/Button";
 
 const AboutUsCards = () => {

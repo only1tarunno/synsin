@@ -1,6 +1,6 @@
-import Container from "./Container";
-import aboutImg from "../assets/images/about-img.png";
-import aboutBg from "../assets/images/about-bg.png";
+import aboutImg from "../../assets/images/about-img.png";
+import aboutBg from "../../assets/images/about-bg.png";
+import Container from "../Shared/Container";
 
 const About = () => {
   return (

@@ -1,7 +1,8 @@
-import WhyChooseus from "./components/WhyChooseUS/WhyChooseus";
-import About from "./components/About";
+import About from "./components/About/About";
 import AboutUsCards from "./components/About/AboutUsCards";
+import Cta from "./components/CTA/CTA";
 import Hero from "./components/Hero/Hero";
+import WhyChooseus from "./components/WhyChooseUS/WhyChooseus";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <About />
       <AboutUsCards />
       <WhyChooseus />
+      <Cta />
     </>
   );
 }

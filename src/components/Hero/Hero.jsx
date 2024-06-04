@@ -1,8 +1,8 @@
 import Button from "../Shared/Button";
 import Container from "../Shared/Container";
-import heroImg from "../assets/images/hero-img.png";
-import heroBg from "../assets/images/hero-bg.png";
-import heroStar from "../assets/images/stars.png";
+import heroImg from "../../assets/images/hero-img.png";
+import heroBg from "../../assets/images/hero-bg.png";
+import heroStar from "../../assets/images/stars.png";
 
 const Hero = () => {
   return (

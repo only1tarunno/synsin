@@ -1,7 +1,7 @@
-import whyChooseBg from "../assets/images/why-choose-bg.jpg";
+import whyChooseBg from "../../assets/images/why-choose-bg.jpg";
 import Container from "../Shared/Container";
 import MessageBoxes from "./MessageBoxes";
-import WhyStars from "../assets/images/why-choose-stars.png";
+import WhyStars from "../../assets/images/why-choose-stars.png";
 
 const WhyChooseus = () => {
   return (
