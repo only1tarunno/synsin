@@ -13,7 +13,7 @@ const Hero = () => {
       id="hero"
     >
       <Container>
-        <div className="flex flex-col lg:flex-row lg:min-h-[776px] min-h-[600px] items-center py-24 lg:py-0">
+        <div className="flex flex-col lg:flex-row lg:min-h-[776px] min-h-[650px] items-center pt-24 pb-10 lg:py-0">
           {/* hero content  */}
           <div className=" flex-1 space-y-[24px] order-2 lg:order-1">
             <h1 className="font-bold lg:text-[50px] sm:text-[32px] text-[26px]">
