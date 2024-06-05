@@ -1,4 +1,4 @@
-import aboutImg from "../../assets/images/about-img.png";
+import aboutImg from "../../assets/images/about-us.png";
 import aboutBg from "../../assets/images/about-bg.png";
 import Container from "../Shared/Container";
 
