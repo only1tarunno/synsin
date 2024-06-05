@@ -7,17 +7,20 @@ const UpperFooter = () => {
   return (
     <div className="bg-gradient-to-b from-[#1873CE] to-[#053B72] text-white py-10">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-y-2 gap-x-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3  gap-y-2 gap-x-5">
           <div className="pb-6 lg:pb-0">
-            <img src={bottomLogo} className="w-[172px] pb-3 lg:pb-7" alt="" />
-            <p className="max-w-full lg:max-w-[200px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+            <img
+              src={bottomLogo}
+              className="mx-auto lg:ml-0 w-[172px] pb-3 lg:pb-7"
+              alt=""
+            />
           </div>
           <div>
-            <h4 className="font-bold text-2xl uppercase">Contacts</h4>
-            <hr className="bg-white h-[2px] w-[52px]" />
-            <ul className="pt-4 lg:pt-7 space-y-3">
+            <h4 className="font-bold text-2xl uppercase text-center lg:text-start">
+              Contacts
+            </h4>
+            <hr className="bg-white h-[2px] w-[52px] mx-auto lg:ml-0" />
+            <ul className="pt-4 lg:pt-7 space-y-3 max-w-[320px] mx-auto lg:ml-0">
               <li>
                 <a
                   href="mailto:info@syncsln.com"
@@ -47,7 +50,7 @@ const UpperFooter = () => {
           <div>
             <a
               href="tel:+49 (0) 251 76 025 196"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 max-w-[320px] mx-auto lg:ml-0"
             >
               <span>
                 <BiSolidPhoneCall />

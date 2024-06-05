@@ -10,7 +10,7 @@ const About = () => {
       id="about-us"
     >
       <Container>
-        <div className="flex flex-col lg:flex-row lg:min-h-[776px] min-h-[600px] items-center">
+        <div className="flex flex-col lg:flex-row lg:min-h-[776px] lg:pt-0 pt-10 lg:pb-0 pb-5 gap-y-8 items-center">
           <div className="hero-img flex-1">
             <img
               src={aboutImg}
@@ -20,7 +20,7 @@ const About = () => {
           </div>
           <div className="flex-1 space-y-[24px]">
             <h2
-              className="font-bold lg:text-[38px] sm:text-[32px] text-[24px]"
+              className="font-bold text-center lg:text-[38px] sm:text-[32px] text-[24px]"
               id="aboutTitle"
             >
               About us

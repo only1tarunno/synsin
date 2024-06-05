@@ -7,14 +7,13 @@ import BookNow from "./BookNow";
 
 const ServicesCards = () => {
   const consulting = [
-    "Project Planning and Strategy",
-    "Design and Architecture Review",
-    "Implementation Oversight",
-    "Quality Assurance and Testing",
+    "Expert Guidance",
+    "Cost Efficiency",
+    "Innovation",
     "Risk Management",
-    " Documentation and Reporting",
-    " Post-Implementation Review",
-    " Technical Interviews",
+    "Objective Perspective",
+    "Strategic Planning",
+    "Resource Optimization",
   ];
 
   const solution = [
@@ -37,14 +36,10 @@ const ServicesCards = () => {
     "Objective Assessment",
     "Actionable Insights",
     "Risk Mitigation",
-    "Peace of Mind",
   ];
 
   return (
-    <section
-      className="py-10 lg:py-0 lg:pb-20 xl:pb-[153px] relative"
-      id="services"
-    >
+    <section className="py-10 lg:py-0 lg:pb-20  relative" id="services">
       <div>
         <h2
           className="font-bold lg:text-[38px] sm:text-[32px] text-[24px] text-[#003A74] text-center mb-14"

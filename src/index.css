@@ -42,7 +42,8 @@ body {
   position: absolute;
   width: 90px;
   height: 8.47px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -6px;
 }
 #whyChooseTitle::before {

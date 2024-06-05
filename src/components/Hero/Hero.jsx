@@ -16,11 +16,11 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row sm:min-h-[776px] min-h-[650px] items-center pt-24 pb-10 lg:py-0">
           {/* hero content  */}
           <div className=" flex-1 space-y-[24px] order-2 lg:order-1">
-            <h1 className="font-bold lg:text-[50px] sm:text-[32px] text-[26px]">
+            <h1 className="font-bold text-center lg:text-start lg:text-[40px] sm:text-[32px] text-[26px] lg:max-w-[480px]">
               Expert IT Advisory Services Tailored for Your Business
             </h1>
             {/* button  */}
-            <div className="max-w-[265px]">
+            <div className="mx-auto lg:mr-auto lg:ml-0 max-w-[265px]">
               <HashLink
                 to="#contact"
                 className="flex justify-center items-center gap-2 bg-[#003A74] text-white text-[20px] py-[14px] px-[38px] rounded-[30px] hover:bg-[#0051A4] capitalize"

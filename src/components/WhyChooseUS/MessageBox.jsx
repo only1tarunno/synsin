@@ -4,7 +4,7 @@ import messagebg from "../../assets/images/message-box.png";
 const MessageBox = ({ title, content }) => {
   return (
     <div
-      className="w-full lg:w-[450px] xl:w-[550px] min-h-[300px] sm:min-h-[354px] xl:min-h-[433px] bg-no-repeat bg-contain bg-center flex flex-col sm:justify-center items-center text-center pt-16 sm:pt-0"
+      className="w-full lg:w-[450px] xl:w-[550px] min-h-[300px] sm:min-h-[354px] xl:min-h-[433px] bg-no-repeat bg-contain bg-center flex flex-col sm:justify-center items-center text-center pt-16 sm:pt-0 lg:pb-[50px]"
       style={{ backgroundImage: `url(${messagebg})` }}
     >
       <h4 className="text-[#242A31] font-semibold text-[18px] md:text-[22px]">

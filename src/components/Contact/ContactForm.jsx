@@ -139,7 +139,7 @@ const ContactForm = () => {
           </label>
         </div>
         {/* submit  */}
-        <div className="lg:text-center">
+        <div className="text-center">
           <button className=" text-white bg-[#00A1E4] text-[20px] py-[14px] px-[38px] rounded-[30px] hover:bg-[#3f88a7] capitalize w-[245px] mt-4">
             Send
           </button>
