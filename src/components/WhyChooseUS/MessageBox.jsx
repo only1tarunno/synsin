@@ -11,7 +11,7 @@ const MessageBox = ({ title, content }) => {
         {title}
       </h4>
       <hr className="bg-[#424242] h-1 w-[114px] my-[12px] md:my-[18px]" />
-      <p className="max-w-[300px] md:max-w-[383px] mx-auto text-xs md:text-base">
+      <p className="max-w-[300px] md:max-w-[383px] mx-auto text-xs md:text-base xl:text-[18px]">
         {content}
       </p>
     </div>
