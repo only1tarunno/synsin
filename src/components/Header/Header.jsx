@@ -40,16 +40,6 @@ const Header = () => {
         Home
       </HashLink>
       <HashLink
-        to="#services"
-        className={`text-black font-semibold text-lg ${
-          activeLink === "#services" ? "active" : ""
-        }`}
-        smooth
-        onClick={() => setActiveLink("#services")}
-      >
-        Services
-      </HashLink>
-      <HashLink
         to="#about-us"
         className={`text-black font-semibold text-lg ${
           activeLink === "#about-us" ? "active" : ""
@@ -58,6 +48,16 @@ const Header = () => {
         onClick={() => setActiveLink("#about-us")}
       >
         About Us
+      </HashLink>
+      <HashLink
+        to="#services"
+        className={`text-black font-semibold text-lg ${
+          activeLink === "#services" ? "active" : ""
+        }`}
+        smooth
+        onClick={() => setActiveLink("#services")}
+      >
+        Services
       </HashLink>
       <HashLink
         to="#contact"

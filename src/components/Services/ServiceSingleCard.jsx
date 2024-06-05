@@ -2,7 +2,7 @@
 
 import shapeImg from "../../assets/images/aboutCardShape.png";
 
-const AboutUsSingleCard = ({ title, content, contentImg, serviceTag }) => {
+const ServiceSingleCard = ({ title, content, contentImg, serviceTag }) => {
   return (
     <div className=" relative flex flex-col lg:flex-row items-center gap-8 home-shadow p-5 md:p-10 xl:p-[54px] rounded-[7px] bg-[#FEFEFE] hover:bg-[#DAF4FF]  text-[#003A74] transition-all duration-[400]">
       <div className="flex-1 lg:order-1 order-2 relative z-10">
@@ -14,7 +14,7 @@ const AboutUsSingleCard = ({ title, content, contentImg, serviceTag }) => {
         </p>
         <div>
           <h3 className=" font-semibold text-[18px] lg:text-[22px] pb-2 lg:pb-4">
-            Benifits:
+            Benefits:
           </h3>
           <div className="flex flex-wrap gap-2 md:items-center">
             {serviceTag?.map((item, indx) => (
@@ -38,4 +38,4 @@ const AboutUsSingleCard = ({ title, content, contentImg, serviceTag }) => {
   );
 };
 
-export default AboutUsSingleCard;
+export default ServiceSingleCard;

@@ -119,7 +119,7 @@ const ContactForm = () => {
           </label>
         </div>
         {/* radio check  */}
-        <div className="w-full lg:w-[550px] mx-auto">
+        <div className="w-full lg:w-[550px] mx-auto text-center">
           <input
             type="radio"
             id="radioButton"
@@ -128,8 +128,14 @@ const ContactForm = () => {
             required
           />
           <label htmlFor="radioButton" className="text-white pl-2">
-            Я даю согласие на обработку данных в соответствии c заявлением o
-            защите данных.
+            I have read and agree to{" "}
+            <a href="https://syncsln.com/privacy-policy">
+              <u>privacy policy</u>
+            </a>{" "}
+            and{" "}
+            <a href="https://syncsln.com/terms-and-conditions">
+              <u>terms &amp; conditions</u>
+            </a>
           </label>
         </div>
         {/* submit  */}

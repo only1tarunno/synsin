@@ -1,11 +1,11 @@
-import AboutUsSingleCard from "./AboutUsSingleCard";
+import AboutUsSingleCard from "./ServiceSingleCard";
 import Container from "../Shared/Container";
 import iTConsulting from "../../assets/images/it-consulting.png";
 import technicalImg from "../../assets/images/technical-supervision.png";
 import solutionImg from "../../assets/images/solution-audit.png";
 import BookNow from "./BookNow";
 
-const AboutUsCards = () => {
+const ServicesCards = () => {
   const consulting = [
     "Project Planning and Strategy",
     "Design and Architecture Review",
@@ -41,7 +41,18 @@ const AboutUsCards = () => {
   ];
 
   return (
-    <section className="py-10 lg:py-0 lg:pb-20 xl:pb-[153px] relative">
+    <section
+      className="py-10 lg:py-0 lg:pb-20 xl:pb-[153px] relative"
+      id="services"
+    >
+      <div>
+        <h2
+          className="font-bold lg:text-[38px] sm:text-[32px] text-[24px] text-[#003A74] text-center mb-14"
+          id="whyChooseTitle"
+        >
+          Our Services
+        </h2>
+      </div>
       <Container>
         <div className="space-y-5 md:space-y-10">
           <AboutUsSingleCard
@@ -71,4 +82,4 @@ const AboutUsCards = () => {
   );
 };
 
-export default AboutUsCards;
+export default ServicesCards;
