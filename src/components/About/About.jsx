@@ -25,7 +25,7 @@ const About = () => {
             >
               About us
             </h2>
-            <p>
+            <p className="text-base lg:text-[18px]">
               Our mission is to provide startups and small businesses with the
               guidance and expertise needed to navigate the complex technology
               landscape. We aim to equip you with a thorough understanding of

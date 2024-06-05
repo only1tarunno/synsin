@@ -1,5 +1,5 @@
 import About from "./components/About/About";
-import AboutUsCards from "./components/Services/ServicesCards";
+import ServicesCards from "./components/Services/ServicesCards";
 import Cta from "./components/CTA/CTA";
 import Contact from "./components/Contact/Contact";
 import CookieBar from "./components/CookieBar/CookieBar";
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <AboutUsCards />
+      <ServicesCards />
       <WhyChooseus />
       <Cta />
       <Contact />
