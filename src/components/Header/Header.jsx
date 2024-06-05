@@ -91,7 +91,9 @@ const Header = () => {
             <div className="text-white text-2xl font-bold">
               <img src={logoImg} className="w-[172px]" alt="Logo" />
             </div>
-            <nav className="hidden md:flex space-x-4">{links}</nav>
+            <nav className="hidden md:flex md:space-x-[30px] lg:space-x-[44px]">
+              {links}
+            </nav>
             <div className="md:hidden">
               <button
                 onClick={toggleMenu}
@@ -110,7 +112,7 @@ const Header = () => {
                 transition={{ duration: 0.3 }}
                 className="md:hidden overflow-hidden"
               >
-                <nav className="flex flex-col space-y-2 mt-4 items-center">
+                <nav className="flex flex-col space-y-4 mt-4 items-center">
                   {links}
                 </nav>
               </motion.div>

@@ -82,17 +82,14 @@ const ContactForm = () => {
           <div className="relative w-full md:w-[32%] h-[60px]">
             <select
               className="w-full h-full rounded-lg pl-16  text-[#003A74] focus:outline-none"
-              defaultValue="Make a choice"
               id="make-a-choice"
+              defaultValue="General Inquiries"
+              required
               name="choice"
             >
-              <option defaultValue="" disabled>
-                Make a choice
-              </option>
-
-              <option defaultValue="option1">General Inquiries</option>
-              <option defaultValue="option2">Project offer</option>
-              <option defaultValue="option3">Career opportunities</option>
+              <option>General Inquiries</option>
+              <option>Project offer</option>
+              <option>Career opportunities</option>
             </select>
             <label
               htmlFor="make-a-choice"
@@ -114,6 +111,7 @@ const ContactForm = () => {
             placeholder="Text..."
             className="w-full h-full rounded-lg pl-16 pt-4 text-[#003A74] focus:outline-none resize-none"
             id="message"
+            required
             name="message"
           ></textarea>
           <label htmlFor="message" className="w-4 absolute left-7 top-[22px]">

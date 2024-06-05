@@ -7,7 +7,7 @@ const UpperFooter = () => {
   return (
     <div className="bg-gradient-to-b from-[#1873CE] to-[#053B72] text-white py-10">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-y-2">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-y-2 gap-x-5">
           <div className="pb-6 lg:pb-0">
             <img src={bottomLogo} className="w-[172px] pb-3 lg:pb-7" alt="" />
             <p className="max-w-full lg:max-w-[200px]">
@@ -20,29 +20,39 @@ const UpperFooter = () => {
             <ul className="pt-4 lg:pt-7 space-y-3">
               <li>
                 <a
-                  href="mailto:info@cloudtime365.com"
+                  href="mailto:info@syncsln.com"
                   className="flex items-center gap-2"
                 >
                   <span>
                     <FaEnvelope />
                   </span>{" "}
-                  info@cloudtime365.com
+                  info@syncsln.com
                 </a>
               </li>
-              <li className="flex items-center gap-2">
-                <span>
-                  <FaMapMarkerAlt />
-                </span>{" "}
-                31-11 Entuziastiv St., Kyiv, Ukraine
+              <li>
+                <a
+                  className="flex items-center gap-2"
+                  href="https://www.google.com/maps/place/Schr%C3%A4derheide+55,+48157+M%C3%BCnster,+Germany/@51.9824546,7.5668067,12.31z/data=!4m6!3m5!1s0x47b9bbd61d53f7df:0xf6fa81a1b836ef12!8m2!3d52.0268112!4d7.6694391!16s%2Fg%2F11cpb45y86?hl=en&amp;entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>
+                    <FaMapMarkerAlt />
+                  </span>{" "}
+                  Schräderheide 55, 48157 Münster, Germany
+                </a>
               </li>
             </ul>
           </div>
           <div>
-            <a href="tel:+38(050)29-97-480" className="flex items-center gap-2">
+            <a
+              href="tel:+49 (0) 251 76 025 196"
+              className="flex items-center gap-2"
+            >
               <span>
                 <BiSolidPhoneCall />
               </span>{" "}
-              +38 (050) 29-97-480
+              +49 (0) 251 76 025 196
             </a>
           </div>
         </div>
