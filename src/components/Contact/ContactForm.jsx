@@ -3,46 +3,62 @@ import mail from "../../assets/images/email.png";
 import check from "../../assets/images/check.png";
 import downArrow from "../../assets/images/down-arrow.png";
 import pen from "../../assets/images/pen.png";
-import { useRef } from "react";
+
 import Swal from "sweetalert2";
-import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    const userMail = e.target.user_email.value;
+    const userMessage = e.target.message.value;
+    const choice = e.target.choice.value;
+    const isChecked = true;
+    const data = { userMail, userMessage, choice, isChecked };
 
-    emailjs
-      .sendForm(
-        // "service_v66170g", //Service ID
-        // "template_256f75t", //Template ID
-        form.current,
-        "nVPddS5hOGMkl5Kl4" //Public Key
-      )
-      .then(
-        (result) => {
-          if (result.text === "OK") {
-            Swal.fire({
-              title: "Mail has been send",
-              icon: "success",
-              showConfirmButton: false,
-              timer: 1500,
-            });
-            e.target.reset();
-          }
-        },
-        (error) => {
-          console.log(error.text);
-          Swal.fire({
-            title: "Mail send error",
-            icon: "error",
-          });
+    try {
+      const response = await fetch(
+        "https://prod-161.westeurope.logic.azure.com:443/workflows/c6eebb988975469bbe2d796509313cd3/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=owzbD3B4124LUodY_T0cwqa_V5Qf4Z19z_gyft8b-E0",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          mode: "cors",
+          body: JSON.stringify({ ...data }),
         }
       );
+
+      if (!response.ok) {
+        Swal.fire({
+          title: "Error",
+          text: "Network response was not ok",
+          icon: "error",
+          showConfirmButton: true,
+        });
+        throw new Error("Network response was not ok");
+      }
+
+      Swal.fire({
+        title: "Mail has been sent",
+        icon: "success",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      e.target.reset();
+    } catch (error) {
+      Swal.fire({
+        title: "Error sending mail",
+        text: error.message,
+        icon: "error",
+        showConfirmButton: true,
+      });
+    }
   };
+
   return (
     <>
-      <form ref={form} onSubmit={sendEmail}>
+      <form onSubmit={sendEmail}>
         <div className="flex items-center justify-between flex-col md:flex-row gap-y-4">
           {/* name  */}
           <div className="relative w-full md:w-[32%] h-[60px]">
@@ -112,6 +128,8 @@ const ContactForm = () => {
             className="w-full h-full rounded-lg pl-16 pt-4 text-[#003A74] focus:outline-none resize-none"
             id="message"
             required
+            minLength={50}
+            maxLength={300}
             name="message"
           ></textarea>
           <label htmlFor="message" className="w-4 absolute left-7 top-[22px]">

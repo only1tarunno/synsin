@@ -22,7 +22,7 @@ const Cta = () => {
             onClick={() => document.getElementById("my_modal_3").showModal()}
             className="flex items-center gap-2 text-[#003A74] bg-white text-[20px] py-[14px] px-[38px] rounded-[30px] hover:bg-[#0051A4] hover:text-white capitalize"
           >
-            Book Now
+            book a free call now
             <span>
               <FaAngleRight />
             </span>
