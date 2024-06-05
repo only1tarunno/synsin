@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import shapeImg from "../../assets/images/aboutCardShape.png";
+
 const AboutUsSingleCard = ({ title, content, contentImg, serviceTag }) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-8 home-shadow p-5 md:p-10 xl:p-[54px] rounded-[7px] bg-[#FEFEFE] hover:bg-[#DAF4FF]  text-[#003A74] transition-all duration-[400]">
+    <div className=" relative flex flex-col lg:flex-row items-center gap-8 home-shadow p-5 md:p-10 xl:p-[54px] rounded-[7px] bg-[#FEFEFE] hover:bg-[#DAF4FF]  text-[#003A74] transition-all duration-[400]">
       <div className="flex-1 lg:order-1 order-2">
         <h3 className="font-bold  text-[20px] sm:text-[24px] lg:text-[26px]">
           {title}
@@ -28,6 +30,9 @@ const AboutUsSingleCard = ({ title, content, contentImg, serviceTag }) => {
       </div>
       <div className="max-w-[360px] mx-auto sm:max-w-[415px] order-1 lg:order-2 pt-8 lg:p-0">
         <img src={contentImg} className="w-full" alt="" />
+      </div>
+      <div className="absolute bottom-0 right-0">
+        <img src={shapeImg} alt="" />
       </div>
     </div>
   );

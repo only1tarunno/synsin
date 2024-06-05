@@ -13,7 +13,7 @@ const Hero = () => {
       id="hero"
     >
       <Container>
-        <div className="flex flex-col lg:flex-row lg:min-h-[776px] min-h-[600px] items-center py-16 lg:py-0">
+        <div className="flex flex-col lg:flex-row lg:min-h-[776px] min-h-[600px] items-center py-24 lg:py-0">
           {/* hero content  */}
           <div className=" flex-1 space-y-[24px] order-2 lg:order-1">
             <h1 className="font-bold lg:text-[50px] sm:text-[32px] text-[26px]">
@@ -38,7 +38,7 @@ const Hero = () => {
           <div className=" flex-1 order-1 lg:order-2">
             <img
               src={heroImg}
-              className="w-full lg:max-w-[96%] max-w-[380px] ml-auto"
+              className="w-full lg:max-w-[96%] sm:max-w-[380px] max-w-[280px] ml-auto"
               alt=""
             />
           </div>
