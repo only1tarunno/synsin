@@ -17,7 +17,7 @@ const CookieBar = () => {
 
   return (
     showCookieBar && (
-      <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4">
+      <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 z-[999]">
         <div className="max-w-screen-lg mx-auto flex items-center justify-between">
           <p className="text-sm">
             This website uses cookies to ensure you get the best experience.
